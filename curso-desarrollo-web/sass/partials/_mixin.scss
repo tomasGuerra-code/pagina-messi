@@ -1,0 +1,13 @@
+@mixin h1-tittle {
+    font-family: "Gravitas One", serif;
+    color: black;
+    font-weight: 400;
+    margin: 0 0 45px;
+}
+
+@mixin p-textos {
+    color: black;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}

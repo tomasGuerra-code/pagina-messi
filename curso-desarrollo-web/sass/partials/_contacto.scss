@@ -1,0 +1,118 @@
+// CONTACTO
+
+@use "./variables" as*;
+@use "./mixin" as*;
+
+.form-contacto h1{
+    @include h1-tittle;
+    justify-content: center;
+    text-align: center;
+}
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background-color: #eee;
+    box-shadow: 0 0 6px white;
+    h1 {
+        text-align: center;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+    .grupo{
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    
+    input,
+    textarea {
+    background: none;
+    color: #eee;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $lightblue-color;
+    resize: none;
+    
+    &focus {
+        outline: none;
+        color: $lightblue-color;
+        }
+    &:focus ~ label,
+    &:valid ~ label {
+        top: -20px;
+        font-size: 16px;
+        color: black;
+        }
+        &:focus ~ .barra::before {
+            width: 100%;
+        }
+    }
+    label {
+        position: absolute;
+        color: #bbb;
+        font-size: 16px;
+        left: 5px;
+        top: 10px;
+        transition: 0.3s ease all;
+        pointer-events: none;
+    }
+    .barra {
+        position: relative;
+        display: block;
+        width: 100%;
+    
+        &::before {
+            content: '';
+            height: 2px;
+            width: 0;
+            bottom: 0;
+            position: absolute;
+            background: $lightblue-color;
+            transition: 0.3s ease all;
+            left: 0;
+            }
+        }
+    }
+    button{
+        background: $lightblue-color;
+        width: 100px;
+        height: 40px;
+        border: none;
+        color: #eee;
+        border-radius: 4px;
+        font-size: 16px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: 0.3s ease background;
+
+        &:hover {
+            background: darken($lightblue-color, 50%);
+        }
+    }
+}
+
+
+// @media screen and (max-width:1100px){
+//     form{
+//         width: 50%;
+//     }
+// }   
+// @media screen and (max-width:600px){
+//     form{
+//         width: 60%;
+//     }
+// }
+// @media screen and (max-width:450px){
+//     form{
+//         width: 80%;
+//     }
+// }   
+// @media screen and (max-width:300px){
+//     form{
+//         width: 90%;
+//     }
+// }   

@@ -1,0 +1,39 @@
+// FOOTER
+
+@use "./variables" as*;
+
+footer {
+  align-items: center;
+  background-color: #212121;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: auto;
+  width: 100%;
+  div a {
+    color: #f0f0f0;
+    border-left: solid white 1px;
+    padding: 0 1rem;
+  }
+  div a:hover {
+    color: $lightblue-color;
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+  }
+  .icons a {
+    border-left: none;
+  }
+  .icons i {
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: white;
+    transition: all 0.5s ease;
+  }
+  .icons i:hover {
+    color: $lightblue-color;
+    transform: translateY(-5px);
+  }
+}

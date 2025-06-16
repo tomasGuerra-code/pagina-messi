@@ -1,0 +1,14 @@
+@use "./mixin" as*;
+
+.container {
+    padding: 0 19%;
+    h1 {
+        @include h1-tittle
+    }
+    h2 {
+        padding: 15px 0;
+    }
+    p {
+        @include p-textos;
+    }
+}

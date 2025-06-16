@@ -1,0 +1,48 @@
+// HEADER
+
+@use "./variables" as*;
+
+header nav {
+  position: sticky;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  background: transparent;
+  .logo {
+    width: 70px;
+    height: auto;
+  }
+  .navlist {
+    display: flex;
+  }
+  .navlist a {
+    color: black;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all 0.55s ease;
+  }
+  .navlist a:hover {
+    border-bottom: 2px solid white;
+  }
+  .navlist a.active {
+    background: $lightblue-color;
+    border-radius: 25px;
+    padding: 10px;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .menu-icon {
+    color: white;
+    font-size: 55px;
+    cursor: pointer;
+    display: none;
+  }
+}

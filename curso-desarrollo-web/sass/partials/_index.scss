@@ -1,0 +1,55 @@
+// SECTION MESSI
+
+@use "./variables" as*;
+@use "./mixin" as*;
+
+.messi {
+  padding: 0 19%;
+  height: 100%;
+  width: 100%;
+  min-width: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+  .messi-text {
+    padding: 150px 0 75px;
+  }
+  .messi-text h1 {
+    @include h1-tittle;
+    font-size: 90px;
+    line-height: 1;
+    font-style: normal;
+  }
+  .messi-text h2 {
+   padding: 15px 0; 
+  }
+  .messi-text p {
+    color: black;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+  }
+  .messi-img img {
+    width: 700px;
+    height: auto;
+  }
+  .messi-text a {
+    display: inline-block;
+    color: black;
+    background: $lightblue-color;
+    padding: 7px 15px;
+    border: 2px solid transparent;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all 0.55s ease;
+  }
+  .messi-text a:hover {
+    background: transparent;
+    border: 2px solid $lightblue-color;
+    transform: translateX(8px);
+  }
+}

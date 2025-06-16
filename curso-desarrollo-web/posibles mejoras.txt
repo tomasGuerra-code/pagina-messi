@@ -1,0 +1,17 @@
+traslate en el footer como los iconos
+achicar el footer
+corregir el nav, hover 
+hamburguesa sin javascript
+eliminar el javascript
+comprimir imagenes
+borrar imagenes pixeleadas
+centrar videos y/o cambiar tamaño, ver si se puede ver mejor en desktop
+tocar el sass para ver si esta bien, porque quizas no esta bien
+poner los alts a las imagenes
+acomodar imagenes en las cards de palmares y el texto
+añadir bootstrap
+corregir contacto (ayuda chatgpt jeje)!!!! HTML Y SASS
+hacer medias
+galeria mover h2
+galeria hover 
+hay que agrandar el font-size y el color en el imput al hacer click y hay que sacar el border

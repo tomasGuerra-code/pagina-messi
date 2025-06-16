@@ -1,0 +1,57 @@
+// PALMARES
+
+@use "./mixin" as*;
+
+.palmares {
+  padding: 0% 19%;
+  .palmares-text {
+    padding: 150px 0 75px;
+  }
+  h1 {
+    @include h1-tittle;
+  }
+  .palmares-text h2 {
+    font-family: "Gravitas One", serif;
+    font-size: 25px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    margin: 0 0 45px;
+  }
+  .palmares-text p {
+    @include p-textos;
+  }
+}
+
+.teams {
+  padding: 2% 2% 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  background: linear-gradient(245.59deg, #fff 28.53%, #aaa 72.52%);
+  .teams h3 {
+    font-size: 25px;
+    padding: 5% 0;
+    margin-bottom: 8px;
+  }
+  .teams ul li {
+    color: #333;
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  .card {
+    width: 325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 2);
+    margin: 20px;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+    /* border-radius: 5%; */
+  }
+}

@@ -1,0 +1,32 @@
+// GALERIA DE IMAGENES
+@use "./mixin" as*;
+
+.h1-gallery {
+  @include h1-tittle;
+  padding: 0 19%;
+}
+
+.gallery-conteiner {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 150px;
+  grid-gap: 15px;
+  padding: 20px;
+  .gallery-item {
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    .gallery-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.videos{
+  padding: 20px;
+  iframe {
+    margin: 5px 0;
+  }
+}
