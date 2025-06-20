@@ -25,7 +25,7 @@ El objetivo del proyecto es aplicar conocimientos básicos de desarrollo web cre
 ## 📌 Estado del proyecto
 
 ✅ Proyecto terminado  
-📅 Última actualización: [14 de junio de 2025]
+📅 Última actualización: [21 de junio de 2025]
 
 ---
 
