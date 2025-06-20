@@ -1,7 +1,7 @@
 @use "./mixin" as*;
 
 .container {
-    padding: 0 19%;
+    padding: 2.5% 19%;
     h1 {
         @include h1-tittle
     }

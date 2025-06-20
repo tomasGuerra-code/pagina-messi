@@ -1,39 +1,57 @@
-// FOOTER
+/* FOOTER */
 
 @use "./variables" as*;
 
 footer {
-  align-items: center;
   background-color: #212121;
   color: #f0f0f0;
   text-align: center;
   padding: 1.5rem 0;
-  margin-top: auto;
   width: 100%;
-  div a {
+
+  //Enlaces
+  a {
     color: #f0f0f0;
-    border-left: solid white 1px;
     padding: 0 1rem;
+    text-decoration: none;
+    border-left: 1px solid white;
+    &:first-child {
+      border-left: none;
+    }
+    &:hover {
+      color: $lightblue-color;
+    }
   }
-  div a:hover {
-    color: $lightblue-color;
-  }
-  .icons {
+
+  //Iconos de redes
+  .footer-icons {
     display: flex;
     justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    a {
+      border-left: none;
+
+      i {
+        font-size: 24px;
+        color: white;
+        transition:
+          color 0.5s ease,
+          transform 0.3s ease2;
+      }
+        &:hover {
+          transform: translateY(-5px);
+        }
+        &:hover i {
+          color: $lightblue-color;
+        }
+      }
+    }
+  //Texto
+  p {
+    margin: 0.5rem 0;
   }
-  .icons a {
-    border-left: none;
-  }
-  .icons i {
-    display: block;
-    margin: 26px 0;
-    font-size: 24px;
-    color: white;
-    transition: all 0.5s ease;
-  }
-  .icons i:hover {
-    color: $lightblue-color;
-    transform: translateY(-5px);
+  .footer-links {
+    margin-top: 0.5rem;
   }
 }

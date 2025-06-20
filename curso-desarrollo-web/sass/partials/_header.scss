@@ -2,47 +2,54 @@
 
 @use "./variables" as*;
 
-header nav {
-  position: sticky;
-  right: 0;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 33px 9%;
-  background: transparent;
+header
+  nav {
+   top: 0;
+   z-index: 1000;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1.5rem 9%;
+   background-color: darken($lightblue-color, 10%);
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+   position: relative;
   .logo {
     width: 70px;
     height: auto;
   }
-  .navlist {
-    display: flex;
-  }
-  .navlist a {
-    color: black;
-    margin-left: 60px;
-    font-size: 15px;
-    font-weight: 600;
-    border-bottom: 2px solid transparent;
-    transition: all 0.55s ease;
-  }
-  .navlist a:hover {
-    border-bottom: 2px solid white;
-  }
-  .navlist a.active {
-    background: $lightblue-color;
-    border-radius: 25px;
-    padding: 10px;
-  }
   .menu-toggle {
     display: none;
+    &:checked ~ .navlist {
+      display: flex;
+    }
   }
   .menu-icon {
-    color: white;
-    font-size: 55px;
-    cursor: pointer;
     display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  .navlist {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+   a {
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.15s ease;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-bottom: 2px solid white;
+    }
+    &.active {
+      background: $lightblue-color;
+    }
+   }
   }
 }

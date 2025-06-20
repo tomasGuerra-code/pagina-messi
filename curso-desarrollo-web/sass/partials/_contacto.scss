@@ -7,6 +7,7 @@
     @include h1-tittle;
     justify-content: center;
     text-align: center;
+    padding: 2.5% 19%;
 }
 form {
     width: 100%;
@@ -36,21 +37,20 @@ form {
     border: none;
     border-bottom: 1px solid $lightblue-color;
     resize: none;
-    
-    &focus {
-        outline: none;
-        color: $lightblue-color;
+        &:focus {
+            outline: none;
+            color: $lightblue-color;
+            }
+        &:focus ~ label,
+        &:valid ~ label {
+            top: -20px;
+            font-size: 16px;
+            color: black;
+            }
+            &:focus ~ .barra::before {
+                width: 100%;
+            }
         }
-    &:focus ~ label,
-    &:valid ~ label {
-        top: -20px;
-        font-size: 16px;
-        color: black;
-        }
-        &:focus ~ .barra::before {
-            width: 100%;
-        }
-    }
     label {
         position: absolute;
         color: #bbb;
@@ -94,25 +94,3 @@ form {
         }
     }
 }
-
-
-// @media screen and (max-width:1100px){
-//     form{
-//         width: 50%;
-//     }
-// }   
-// @media screen and (max-width:600px){
-//     form{
-//         width: 60%;
-//     }
-// }
-// @media screen and (max-width:450px){
-//     form{
-//         width: 80%;
-//     }
-// }   
-// @media screen and (max-width:300px){
-//     form{
-//         width: 90%;
-//     }
-// }   
