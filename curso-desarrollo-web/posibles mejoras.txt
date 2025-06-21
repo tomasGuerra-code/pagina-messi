@@ -1,8 +1,0 @@
-traslate en el footer como los iconos
-footer responsive?
-
-hacer funcionar el boton del nav
-
-añadir bootstrap
-
-tablets media

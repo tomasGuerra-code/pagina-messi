@@ -18,12 +18,6 @@ header
     width: 70px;
     height: auto;
   }
-  .menu-toggle {
-    display: none;
-    &:checked ~ .navlist {
-      display: flex;
-    }
-  }
   .menu-icon {
     display: none;
     font-size: 2rem;
